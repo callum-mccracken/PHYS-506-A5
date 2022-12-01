@@ -1,0 +1,5 @@
+1: Done.
+2: Done.
+3: Done? Ideally figure out how to deal with spin !=0 for kaons?
+4: Done a), Have a value for b), it seems wrong though...
+5: Done.

@@ -1,0 +1,37 @@
+\section{Predict the ratio of \texorpdfstring{$K^- \to e^- \bar{\nu}_e$}{K minus to e minus nu e} and \texorpdfstring{$K^- \to \mu^- \bar{\nu}_\mu$}{K minus to mu minus nu mu} weak interaction decay rates and compare your answer to the measured value of \texorpdfstring{$\frac{\Gamma(K^- \to e^- \bar{\nu}_e)}{\Gamma(K^- \to \mu^- \bar{\nu}_\mu)} = (2.488\pm 0.012) \times 10^{-5}$}{2.488e-5 +/- 0.012e-5}.}
+
+Recall Thomson 11.25:
+\begin{align*}
+    \Gamma(\pi^- \to \ell^- \bar{\nu}_\ell) &= \frac{G_F^2}{8\pi m_\pi^3} f_\pi^2 \left[m_\ell (m_\pi^2 - m_\ell^2)\right]^2
+\end{align*}
+
+This is for pions, but let's see if we can derive something similar for kaons.
+
+Start the same way, in the CoM frame:
+\begin{align*}
+    p_K = (m_K, 0, 0, 0), \hspace{1cm} p_\ell = p_3 = (E_\ell, 0, 0, p), \hspace{1cm} p_{\bar{\nu}} = p_4 = (p, 0, 0, -p)
+\end{align*}
+(where $p$ is the magnitude of the momentum fo both the charge lepton and the antineutrino)
+
+The weak leptonic current associated with the $\ell^- \bar{\nu}_\ell$ vertex is
+$j_\ell^\nu = \frac{g_W}{\sqrt{2}}\bar{u}(p_3) \frac{1}{2}\gamma^\nu (1 - \gamma^5) \nu(p_4) $
+
+And again since the kaon is a bound $q\bar{q}$ state, the corresponding hadronic current cannot be expressed in terms of free particle Dirac spinors. However, the kaon current has to be a four-vector such that the four-vector scalar product with the leptonic current vibes a Lorentz-invariant expression for the matrix element.
+
+There might be a subtlety here since kaons don't have zero spin, but I'm pretty sure to some approximation we can use the same expression for pions, making a constant replacement and ending up with a similar expression as for pions but with the kaon mass:
+
+\begin{align*}
+    \frac{\Gamma(K^- \to e^- \bar{\nu}_e)}{\Gamma(K^- \to \mu^- \bar{\nu}_\mu)} = \left[\frac{m_e(m_K^2-m_e^2)}{m_\mu(m_K^2-m_\mu^2)}\right]^2\\
+\end{align*}
+
+Using $m_e = \SI{0.511}{MeV}, m_K = \SI{494}{MeV}, m_\nu = \SI{106}{MeV}$, we get
+\begin{align*}
+    \frac{\Gamma(K^- \to e^- \bar{\nu}_e)}{\Gamma(K^- \to \mu^- \bar{\nu}_\mu)} \approx 2.55 \times 10^{-5}\\
+\end{align*}
+
+The measured value:
+\begin{align*}
+    \frac{\Gamma(K^- \to e^- \bar{\nu}_e)}{\Gamma(K^- \to \mu^- \bar{\nu}_\mu)} = (2.488\pm 0.012) \times 10^{-5}\\
+\end{align*}
+
+These are relatively close to each other -- our calculation isn't within the the uncertainty of the measured value, but it's the same order of magnitude at least, and we've made some approximations, especially with the spin thing.
